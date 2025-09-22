@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="logo-text">NETFLIX</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">TV Shows</a>
+                    <a href="#" class="nav-link">Movies</a>
+                    <a href="#" class="nav-link">New & Popular</a>
+                    <a href="#" class="nav-link">My List</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <button class="nav-icon search-icon" aria-label="Search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </button>
+                <button class="nav-icon notification-icon" aria-label="Notifications">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                    </svg>
+                </button>
+                <div class="profile-dropdown">
+                    <button class="profile-button" aria-label="Profile">
+                        <div class="profile-avatar"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Back in Action" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-info">
+                <h1 class="hero-title">Back in Action</h1>
+                <div class="hero-meta">
+                    <span class="hero-year">2025</span>
+                    <span class="hero-rating">PG-13</span>
+                    <span class="hero-genre">Action • Comedy • Thriller</span>
+                </div>
+                <p class="hero-description">
+                    They thought they were out of the game. They were wrong. Watch Cameron Diaz and Jamie Foxx return to action in this explosive comedy thriller that will keep you on the edge of your seat.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-play">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Play
+                    </button>
+                    <button class="btn btn-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                        More Info
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Rows -->
+    <main class="content">
+        <!-- Trending Now -->
+        <section class="content-row">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="row-content">
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Back in Action" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Back in Action</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="KPop Demon Hunters" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">KPop Demon Hunters</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Animation</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/485c6ef7bfcb6e19f1e35c321fcf746be00028d8.png" alt="The Wrong Paris" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Wrong Paris</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755088196/pplx_project_search_images/df4d6f06d202100269b1cf5e353bdafd799bd0d3.png" alt="Stranger Things" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Stranger Things</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sci-Fi Horror</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Day Shift" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Day Shift</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/485c6ef7bfcb6e19f1e35c321fcf746be00028d8.png" alt="The Electric State" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Electric State</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sci-Fi Adventure</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Netflix Originals -->
+        <section class="content-row">
+            <h2 class="row-title">Netflix Originals</h2>
+            <div class="row-content">
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755088196/pplx_project_search_images/df4d6f06d202100269b1cf5e353bdafd799bd0d3.png" alt="Stranger Things" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Stranger Things</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sci-Fi Horror</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="KPop Demon Hunters" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">KPop Demon Hunters</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Animation</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="The Electric State" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Electric State</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sci-Fi Adventure</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="Wednesday" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Wednesday</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Comedy Horror</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="The Old Guard 2" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Old Guard 2</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="House of Cards" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">House of Cards</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Political Drama</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action & Adventure -->
+        <section class="content-row">
+            <h2 class="row-title">Action & Adventure</h2>
+            <div class="row-content">
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Back in Action" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Back in Action</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Day Shift" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Day Shift</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="The Old Guard 2" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Old Guard 2</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="The Electric State" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Electric State</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sci-Fi Adventure</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="Thriller" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Brick</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Thriller</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comedy Movies -->
+        <section class="content-row">
+            <h2 class="row-title">Comedy Movies</h2>
+            <div class="row-content">
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/b54a281373db9ce740dbcc95c0c0bd4bccb8c2fd.png" alt="The Spy Next Door" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Spy Next Door</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Family Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/485c6ef7bfcb6e19f1e35c321fcf746be00028d8.png" alt="Holidate" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Holidate</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Romantic Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/485c6ef7bfcb6e19f1e35c321fcf746be00028d8.png" alt="The Wrong Paris" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Wrong Paris</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Happy Gilmore 2" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Happy Gilmore 2</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sports Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755362115/pplx_project_search_images/9b3dac94f0c51674a0085175e1baaddb276a97b4.png" alt="Day Shift" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Day Shift</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Action Comedy</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentaries -->
+        <section class="content-row">
+            <h2 class="row-title">Documentaries</h2>
+            <div class="row-content">
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/398f0c85d82e887d4550a7e6b6901b43855bdf38.png" alt="SLY" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">SLY</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Documentary</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/398f0c85d82e887d4550a7e6b6901b43855bdf38.png" alt="Documentary 2" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Nature's Secrets</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Documentary</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/398f0c85d82e887d4550a7e6b6901b43855bdf38.png" alt="Documentary 3" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Tech Revolution</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Documentary</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TV Shows -->
+        <section class="content-row">
+            <h2 class="row-title">TV Shows</h2>
+            <div class="row-content">
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755088196/pplx_project_search_images/df4d6f06d202100269b1cf5e353bdafd799bd0d3.png" alt="Stranger Things" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Stranger Things</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Sci-Fi Horror</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="Wednesday" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Wednesday</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Comedy Horror</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="House of Cards" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">House of Cards</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Political Drama</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755088196/pplx_project_search_images/df4d6f06d202100269b1cf5e353bdafd799bd0d3.png" alt="Orange Is the New Black" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Orange Is the New Black</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Comedy Drama</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1758558823/pplx_project_search_images/68ea04040deccbeba5dae3f9912b56ff37c9e406.png" alt="The Crown" class="card-image">
+                    <div class="card-overlay">
+                        <h3 class="card-title">The Crown</h3>
+                        <p class="card-year">2025</p>
+                        <p class="card-genre">Historical Drama</p>
+                        <div class="card-buttons">
+                            <button class="card-btn">+ My List</button>
+                            <button class="card-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
